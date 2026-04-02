@@ -48,7 +48,7 @@ key stays private), then edit:
 nasa_key = "YOUR_KEY_HERE"   # free key at https://api.nasa.gov
 
 [tracker]
-refresh_interval   = 30      # seconds between Horizons pulls
+refresh_interval   = 60      # seconds between Horizons pulls
 blog_refresh_every = 4       # blog refreshes every N orbital cycles
 ```
 
@@ -79,7 +79,7 @@ python main.py --config other.toml    # use a different config file
 | Source | What for |
 |---|---|
 | [JPL Horizons API](https://ssd.jpl.nasa.gov/horizons/) | Real-time position & velocity vectors for Orion (NAIF ID **-1024**) and the Moon |
-| [NASA Artemis II Live Blog](https://www.nasa.gov/blogs/missions/category/artemis-ii/) | Mission status updates |
+| [NASA Artemis II Live Blog](https://www.nasa.gov/blogs/missions/2026/04/01/live-artemis-ii-launch-day-updates/) | Mission status updates |
 
 ---
 
