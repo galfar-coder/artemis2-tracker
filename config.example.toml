@@ -1,0 +1,20 @@
+# ╔══════════════════════════════════════════════════════════╗
+# ║  Artemis II Live Tracker — Configuration                 ║
+# ║  Copy this file to config.toml and fill in your values  ║
+# ╚══════════════════════════════════════════════════════════╝
+#
+# Get a free NASA API key at: https://api.nasa.gov
+# (DEMO_KEY works but is rate-limited to 30 req/hour)
+
+[api]
+nasa_key = "DEMO_KEY"
+
+[tracker]
+# How often (in seconds) to pull fresh orbital data from JPL Horizons.
+# Minimum recommended: 30  (DEMO_KEY safe zone)
+# With a real key you can go as low as 10.
+refresh_interval = 60
+
+# Refresh the NASA mission blog every N orbital cycles.
+# e.g. 4 means blog updates every  refresh_interval × 4  seconds.
+blog_refresh_every = 4

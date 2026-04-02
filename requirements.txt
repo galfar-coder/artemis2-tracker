@@ -1,0 +1,6 @@
+rich>=13.0.0
+requests>=2.28.0
+
+# tomli is only needed on Python < 3.11
+# Python 3.11+ ships tomllib in the standard library
+tomli>=2.0.0; python_version < "3.11"
